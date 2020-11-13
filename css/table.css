@@ -1,0 +1,61 @@
+.ta1 {
+	width: 700px;/*テーブルの幅*/
+	margin-top:80px;/*テーブルの上にスペース*/
+	margin-left:156px;/*左にスペース*/
+	margin-bottom:0px;/*下に少しスペース*/
+	font-size: 14px;
+	font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","メイリオ","Meiryo","Osaka－等幅";
+	background-color:transparent;
+}
+
+.ta1.status {
+    text-align:center;
+}
+
+.category {
+    font-size: 14px;
+    font-weight:700;
+	font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","メイリオ","Meiryo","Osaka－等幅";
+	color:#678f93;
+}
+
+.title {
+    text-align:center;
+    font-size: 20px;
+    font-weight:700;
+	font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","メイリオ","Meiryo","Osaka－等幅";
+	color:#638469;
+}
+
+.ta1 th,.ta1 td {
+    padding:10px 15px;
+}
+
+.ta1 th {
+    border-bottom:double 3px #666666;
+    text-align:left;
+}
+
+.ta1 td {
+    border-bottom:dotted 1px #666666;
+}
+
+.ta1 a {
+    color:#000099;
+}
+
+.sample10	{
+	border: 1px solid #DDD;
+}
+.sample10 th	{
+	background: url(images/th_10.jpg) repeat-x bottom;
+	border: 1px solid #DDD;
+	color: #333;
+}
+.sample10 td	{
+	border: 1px solid #DDD;
+	color: #333;
+}
+
+table img{
+border:2px solid #000000;}

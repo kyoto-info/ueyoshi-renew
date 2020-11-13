@@ -1,0 +1,1101 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html{
+    margin: 0!important;
+    font-size: 62.5％;/* ルート要素のフォントサイズを1rem=10pxと定義する */
+}
+
+
+body {
+    font-family: Arial, Helvetica, "sans-serif","Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
+    display: none;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+#wrap-no-pr {
+    overflow: hidden;
+}
+
+section {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container, .container-fluid {
+    padding: 0!important;
+    box-sizing: border-box;
+}
+
+.row {
+    position: relative;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+/*bootstrap カラム隙間削除*/
+.no-gutters {
+  margin:0;
+  padding:0;
+}
+
+.no-gutters　> .col,
+.no-gutters　> [class="col-"] {
+  margin:0;
+  padding:0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/*----------------- Font -----------------*/
+
+h1, h2, h3, h4, h5 {
+    text-align: center!important;
+    margin-bottom: 1em;
+    font-family: ryo-display-plusn, serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1 {
+	padding-top: 10%;
+}
+
+h1 span.heading-en {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 2em;
+    font-family: ryo-display-plusn, serif;
+    font-weight: 400;
+}
+
+p.discliption {
+    font-size: 1rem;
+    margin-bottom: 2em!important;
+    text-align: center;
+    line-height: 2.5em;
+}
+
+p.discliption-2 {
+    font-size: 1rem;
+    margin-bottom: 0.5em!important;
+    text-align: center;
+    line-height: 2.5em;
+}
+
+/*----------------- 画像系 ----------------- */
+img {
+    max-width: 100%;
+    padding: 0;
+}
+
+/*----------------- ボタン系 ----------------- */
+
+.img-btn {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+
+.img-btn h4 {
+    font-size: 1.2rem;
+    letter-spacing: 0.2em;
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+/*.img-btn:hover {
+    transition: hide;
+}*/
+
+.img-btn img {
+    width: 100%;
+}
+
+/*header*/
+/*header {
+    height: 100vh;
+}*/
+
+/*----------------- link 系 -----------------*/
+
+
+
+
+/*----------------- ローディングアニメーション -----------------*/
+
+#loading {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    transition: all 1s;
+}
+
+.prog-bar {
+    height: 100Vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.prog-bar img {
+    width: 8%;
+}
+
+.prog-bar h4 {
+    text-align: center;
+    color: #8fbc8f;
+}
+
+.loaded {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*----------------- カルーセル -----------------*/
+
+
+.hero-logo {
+    width: 10%;
+    height: auto;
+    filter: drop-shadow(3px 3px 5px #000);
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.carousel-item {
+   transition: transform .6s ease-in, opacity .6s ease-out;
+   background-color: #000;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/*----------------- nav -----------------*/
+
+li.nav-item a {
+    color: #fff!important;
+    font-family: ryo-display-plusn, serif;
+    transition: all .5s ease-out;
+}
+
+li.nav-item a:hover {
+    color: #74c86e!important;
+}
+
+.navbar {
+    padding-bottom: 1em!important;
+    background: linear-gradient(rgba(0, 0, 0, 1) , rgba(0, 0, 0, 0))!important;
+    background: -moz- linear-gradient(top, #000 60%, transparent)!important;
+    background: -webkit- linear-gradient(top, #000 60%, transparent)!important;
+}
+
+.navbar-brand img {
+    width: 10vw;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,254,.6)!important;
+}
+
+/*ドロップダウンメニュー*/
+li a.dropdown-item {
+    color: #000;
+    transition: all .5s ease-out;
+}
+
+li a.dropdown-item:hover {
+    color: #fff;
+    background-color: lightslategray;
+}
+
+/*----------------- About -----------------*/
+
+.u-200th {
+    margin-top: 5em;
+}
+
+.logo-mark {
+    width: 10vw;
+    height: auto;
+    text-align: center;
+}
+
+.u-200th h2 span {
+    font-size: 1rem;
+}
+
+.about-btns {
+   padding-top: 3em;
+   padding-bottom: 3em;
+}
+
+/*----------------- Concept -----------------*/
+
+#concept {
+    /*background-image: url("../img/bg-test-002.jpg");
+    background-color:rgba(255,255,255,0.8);
+    background-blend-mode:lighten;
+    background-attachment: fixed;*/
+}
+
+.img-btn h4.concept {
+    font-size: 1.2rem;
+    letter-spacing: 0.2em;
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.concept-sec {
+    width: 100%;
+    height: 100vh;
+    padding: 0!important;
+}
+
+.concept-disc {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+/*nullオブジェクト*/
+.right-null {
+    display: block;
+}
+
+/*白バックアニメーション*/
+.bg-white-r {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #fff 45%, transparent);
+}
+/*.delighterセッティング*/
+.bg-white-r.delighter {
+    display: block;
+    transition: all 2.5s ease-out; opacity: 0;
+    width: 0px;
+    height: 100%;
+}
+/* スタート時のスタイル */
+.bg-white-r.delighter.started {
+    max-width: 99999px;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+ }
+
+.bg-white-l {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #fff 45%, transparent);
+}
+/*.delighterセッティング*/
+.bg-white-l.delighter {
+    display: block;
+    transition: all 2.5s ease-out; opacity: 0;
+    /*transform:translateX(-100％);*/
+    width: 0px;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    right: 0%;
+    top: 0;
+}
+/* スタート時のスタイル */
+.bg-white-l.delighter.started {
+    max-width: 99999px;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+ }
+
+ul {
+    list-style: none;
+}
+
+
+.concept-disc-r {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    box-sizing: border-box;
+}
+
+.sec-one {
+    background-image: url("../img/bg-001.jpg");
+    background-size: cover;
+    background-color:rgba(255,255,255,0);
+    background-blend-mode:lighten;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.sec-two {
+    background-image: url("../img/bg-002.jpg");
+    background-size: cover;
+    background-color:rgba(255,255,255,0);
+    background-blend-mode:lighten;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.sec-three {
+    background-image: url("../img/bg-003.jpg");
+    background-size: cover;
+    background-color:rgba(255,255,255,0);
+    background-blend-mode:lighten;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+/*----------------- Gallery -----------------*/
+#gallery {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #f1f1ef;
+}
+
+.gallery-bg img {
+    mix-blend-mode: color-dodge;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.gallery-disc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.gallery-link {
+    /*background-color: #f1f1ef;*/
+    border-radius: 8px;
+    padding: 1em 0.6em;
+    box-sizing: border-box;
+}
+
+.gallery-link p  {
+    text-align: center;
+    padding: 2em 0 1em 0;
+    line-height: 2em;
+}
+
+.switch-base {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5em;
+    border-radius: 10px;
+    background: #f1f1ef;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  5px 5px 10px #bcbcba,
+                -5px -5px 10px #ffffff;
+    transition: box-shadow ease-in .8s;
+}
+
+.gallery-btn {
+    color: #000;
+    text-align: center;
+    padding: 0.5em 0;
+    margin: 2em 1.5em ;
+    border: #000 solid 1px;
+    transition: all ease-in .5s;
+}
+
+.gallery-btn:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+#garden {
+    opacity: .5;
+    transition: all ease-in .8s;
+    cursor: pointer;
+}
+
+#garden:hover {
+    opacity: 1;
+}
+
+#garden img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/*----------------- rec -----------------*/
+
+#rec {
+    background-color: #dcdcdc;
+}
+
+.rec-img, .rec-disc {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ .rec-disc h2 {
+     font-size: 1.2rem;
+ }
+
+.rec-disc p {
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+}
+
+.rec-btn {
+    font-size: 1rem;
+    background-color: #74c86e;
+    color:#fff;
+    padding: 0.5em 1.5em;
+    border-radius: 8px;
+    transition: all ease-in-out .5s;
+}
+
+.rec-btn:hover {
+    background-color: #228b22;
+}
+
+.rec-btn a {
+    color: #fff;
+}
+
+.rec-btn a:hover {
+    color: #fff;
+}
+
+/*----------------- footer -----------------*/
+
+footer {
+    background-color: #000;
+}
+
+/*.g-map iframe {
+    width: 100%;
+    height: auto;
+}*/
+
+.footer-logo {
+    max-width: 35%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.access-data ul {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.access-data li {
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: ryo-display-plusn, serif;
+    font-weight: 400;
+    margin-bottom: 0.8em;
+}
+
+.copy-r p {
+    font-size: 0.7rem;
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+    margin-bottom: 0;
+}
+
+/*----------------- スクロールエフェクト ----------------- */
+
+/*.delighterセッティング-001*/
+.f-in-one.delighter {
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 1s ease-out ;
+}
+/* スタート時のスタイル */
+.f-in-one.delighter.started {
+	opacity: 1;
+	transform: none;
+}
+
+/*.delighterセッティング-002*/
+.f-in-two.delighter {
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 1s ease-out .4s;
+}
+/* スタート時のスタイル */
+.f-in-two.delighter.started {
+	opacity: 1;
+	transform: none;
+}
+
+/*.delighterセッティング-003*/
+.f-in-three.delighter {
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 1s ease-out .7s;
+}
+/* スタート時のスタイル */
+.f-in-three.delighter.started {
+	opacity: 1;
+	transform: none;
+}
+
+/*.delighterセッティング-004*/
+.f-in-four.delighter {
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 1s ease-out .9s;
+}
+/* スタート時のスタイル */
+.f-in-four.delighter.started {
+	opacity: 1;
+	transform: none;
+}
+
+/*.delighterセッティング-005*/
+.f-in-fifth.delighter {
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 1s ease-out 1s;
+}
+/* スタート時のスタイル */
+.f-in-fifth.delighter.started {
+	opacity: 1;
+	transform: none;
+}
+
+/*.delighterセッティング-006*/
+.f-in-sixth.delighter {
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 1s ease-out 1.2s;
+}
+/* スタート時のスタイル */
+.f-in-sixth.delighter.started {
+	opacity: 1;
+	transform: none;
+}
+
+
+/*.delighterセッティング-left-001  右から左*/
+.f-in-left-1.delighter {
+	transform: translateX(30px);
+	opacity: 0;
+	transition: all 1s ease-out .3s;
+}
+/* スタート時のスタイル */
+.f-in-left-1.delighter.started {
+	opacity: 1;
+	transform: none;
+}
+
+/*.delighterセッティング-left-002*/
+.f-in-left-2.delighter {
+	transform: translateX(30px);
+	opacity: 0;
+	transition: all 1s ease-out .6s;
+}
+/* スタート時のスタイル */
+.f-in-left-2.delighter.started {
+	opacity: 1;
+	transform: none;
+}
+
+/*.delighterセッティング-right-001　左から右*/
+.f-in-right-1.delighter {
+	transform: translateX(-30px);
+	opacity: 0;
+	transition: all 1s ease-out .3s;
+}
+/* スタート時のスタイル */
+.f-in-right-1.delighter.started {
+	opacity: 1;
+	transform: none;
+}
+
+/*.delighterセッティング-right-002*/
+.f-in-right-2.delighter {
+	transform: translateX(-30px);
+	opacity: 0;
+	transition: all 1s ease-out .6s;
+}
+/* スタート時のスタイル */
+.f-in-right-2.delighter.started {
+	opacity: 1;
+	transform: none;
+}
+
+
+
+/*.f-in-one.delighter.started .child:nth-of-type(1) {
+	transition: all 1s ease-out .3s;
+}
+.f-in-one.delighter.started .child:nth-of-type(2) {
+	transition: all 1s ease-out .5s;
+}
+.f-in-one.delighter.started .child:nth-of-type(3) {
+	transition: all 1s ease-out .7s;
+}
+.f-in-one.delighter.started .child:nth-of-type(4) {
+	transition: all 1s ease-out .9s;
+}
+.f-in-one.delighter.started .child:nth-of-type(5) {
+	transition: all 1s ease-out 1.1s;
+}
+.f-in-one.delighter.started .child:nth-of-type(6) {
+	transition: all 1s ease-out 1.3s;
+}
+.f-in-one.delighter.started .child:nth-of-type(7) {
+	transition: all 1s ease-out 1.5s;
+}
+.f-in-one.delighter.started .child:nth-of-type(8) {
+	transition: all 1s ease-out 1.7s;
+}
+.f-in-one.delighter.started .child:nth-of-type(9) {
+	transition: all 1s ease-out 1.9s;
+}
+.f-in-one.delighter.started .child:nth-of-type(10) {
+	transition: all 1s ease-out 2.1s;
+}*/
+
+
+/*----------------- Back to top ボタン ----------------- */
+#btt-btn {
+}
+
+#btt-btn img {
+    width: 90px;
+    height: 90px;
+    background-color: #000;
+    padding: 0.5em;
+    border-radius: 5%;
+    opacity: 0.6;
+    position: fixed;
+    bottom: 2%;
+    right: 20px;
+    z-index: 100;
+    transition: all ease-in-out .3s;
+}
+
+#btt-btn img:hover {
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.show {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity ease-in .5s;
+    }
+
+.hyde {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity ease-out .5s;
+    }
+
+
+/*----------------- タブレット（大）表示 ----------------- */
+@media (max-width: 1024px) {
+
+    .hero-logo {
+    width: 18%;
+    height: auto;
+    filter: drop-shadow(3px 3px 5px #000);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+    /*concept*/
+
+    .concept-sec {
+    height: 50vh;
+    }
+
+/* スタート時のスタイル */
+.bg-white-r.delighter.started {
+    max-width: 99999px;
+    width: 100%;
+    height: 50vh;
+    opacity: 1;
+ }
+
+/* スタート時のスタイル */
+.bg-white-l.delighter.started {
+    max-width: 99999px;
+    width: 100%;
+    height: 50vh;
+    opacity: 1;
+ }
+
+    /*concept bg画像*/
+
+ /*.sec-one {
+    background-image: url("../img/bg-001-tab-1.jpg");
+    background-size: cover;
+    background-color:rgba(255,255,255,0);
+    background-blend-mode:lighten;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.sec-two {
+    background-image: url("../img/bg-002-tab-1.jpg");
+    background-size: cover;
+    background-color:rgba(255,255,255,0);
+    background-blend-mode:lighten;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.sec-three {
+    background-image: url("../img/bg-003-tab-1.jpg");
+    background-size: cover;
+    background-color:rgba(255,255,255,0);
+    background-blend-mode:lighten;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}*/
+
+}
+
+
+/*----------------- タブレット表示 ----------------- */
+
+@media (max-width: 991px) {
+    .img-btn h4 {
+        font-size: 1.2rem;
+    }
+
+    .hero-logo {
+       width: 25%;
+    　　height: auto;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+    }
+
+    .carousel-item img {
+        display: block;
+        height: 70vh;
+    }
+
+    p.discliption {
+        font-size: 1rem;
+        margin-bottom: 2em!important;
+        text-align: center;
+        line-height: 2em;
+        width: 100vw;
+    }
+
+    p.discliption-2 {
+    font-size: 1rem;
+    margin-bottom: 0.5em!important;
+    text-align: center;
+    line-height: 2em;
+    width: 100vw;
+    }
+
+    /*.d-md-block {
+     display: block!important;
+    }*/
+
+    /*nav*/
+    .navbar-brand img {
+    width: 20vw;
+    }
+
+    /*about*/
+    .logo-mark {
+        width: 20vw;
+        height: auto;
+        text-align: center;
+    }
+
+    /*concept*/
+
+        .concept-sec {
+    height: 100vh;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .img-btn h4.concept {
+    font-size: 2rem;
+    }
+
+    /*nullオブジェクト*/
+    .right-null {
+        display: none;
+    }
+
+    /*白バックアニメーション*/
+    .bg-white-r {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, #fff 65%, transparent);
+    }
+}
+
+/*----------------- スマホ表示 -----------------*/
+
+@media (max-width: 767px) {
+    h1 {
+        padding-top: 0;
+    }
+
+    .hero-logo {
+       width: 25%;
+    　　max-height: auto;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+
+    }
+
+    .carousel-item img {
+        display: block;
+        height: 70vh;
+    }
+
+    p.discliption {
+        font-size: 0.8rem;
+        margin: 0!important;
+        margin-bottom: 2em!important;
+        text-align: center;
+        line-height: 1.8em;
+        width: 90vw;
+    }
+
+    p.discliption-2 {
+    font-size: 0.8rem;
+    margin-bottom: 0.5em!important;
+    text-align: center;
+    line-height: 1.8em;
+    }
+
+    /* ローディングアニメーション */
+
+    .prog-bar img {
+    width: 20%;
+}
+
+
+    /*nav*/
+    .navbar-toggler {
+        /*border: 1px solid #fff;*/
+    }
+
+    .navbar-toggler-icon {
+    background-image: url(../img/icon-2.svg);
+}
+
+    .navbar-brand img {
+        width: 35vw;
+    }
+
+    button:focus {
+    outline: none;
+    outline: none -webkit-focus-ring-color;
+}
+
+    /*about*/
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .logo-mark {
+        width: 35vw;
+        height: auto;
+        text-align: center;
+    }
+
+    .u-200th {
+        margin-top: 1em;
+    }
+
+    .u-200th h2 span {
+        font-size: 0.8rem;
+    }
+
+    .about-btns {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    /*concept*/
+
+    .concept-sec {
+    height: 50vh;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .img-btn h4.concept {
+    font-size: 1.2rem;
+    }
+
+    /*nullオブジェクト*/
+    .right-null {
+        display: none;
+    }
+
+    /*白バックアニメーション*/
+
+    /*スタート時*/
+    .bg-white-r.delighter.started {
+        max-width: 99999px;
+        width: 100%;
+        height: 100vh;
+        opacity: 1;
+    }
+
+    .bg-white-l.delighter.started {
+        max-width: 99999px;
+        width: 100%;
+        height: 100vh;
+        opacity: 1;
+    }
+
+    .bg-white-r {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(255, 255, 255, .7) 45%, rgba(255, 255, 255, .1));
+    }
+
+    .bg-white-l {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, .7) 45%, rgba(255, 255, 255, .1));
+}
+
+    .sec-one {
+    background-size: cover;
+}
+
+    .sec-one {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/bg-001-sp.jpg");
+    background-size: cover;
+    background-color:rgba(255,255,255,0);
+    background-blend-mode:lighten;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.sec-two {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/bg-002-sp.jpg");
+    background-size: cover;
+    background-color:rgba(255,255,255,0);
+    background-blend-mode:lighten;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.sec-three {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/bg-003-sp.jpg");
+    background-size: cover;
+    background-color:rgba(255,255,255,0);
+    background-blend-mode:lighten;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+    /*Back to top*/
+    #btt-btn img {
+    width: 70px;
+    height: 70px;
+    background-color: #000;
+    padding: 0.5em;
+    border-radius: 5%;
+    opacity: 0.6;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 100;
+    transition: all ease-in-out .3s;
+    }
+
+    /* rec */
+
+    .rec-disc {
+    margin: 2em;
+    }
+
+    .rec-disc h2 {
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+    }
+
+    /*footer*/
+
+}

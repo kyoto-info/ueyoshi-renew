@@ -1,0 +1,64 @@
+@charset "utf-8";
+html{
+	overflow-y:scroll;
+    }
+
+h1{
+	color:#000;
+	margin:0;
+	padding:0;
+	}
+
+li{
+	color:#000;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	}
+	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
+		margin:0;
+		padding:0;
+		}
+
+address,caption,cite,code,dfn,em,strong,th,var{
+	font-style:normal;
+	}
+
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+	background-color:#FFF;
+	margin:0 auto;
+	}
+
+caption,th{
+	text-align:left;
+	}
+
+q:before,q:after{content:'';
+    }
+
+object,embed{
+	vertical-align:top;
+	}
+
+hr,legend{
+	display:none;
+	}
+
+body{
+	font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","ＭＳ Ｐゴシック","Osaka－等幅";
+	background:url(../image/bg.jpg) repeat;
+	color:#000;
+	font-size:14px;
+	line-height:150%;
+	text-align:left;
+	}
+
+a,a:link,a:visited{color:#000;
+    }
+
+h1,h2,h3,h4,h5,h6,h7{
+	color:#000;
+	font-size:100%;
+	}

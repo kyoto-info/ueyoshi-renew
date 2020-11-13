@@ -1,0 +1,203 @@
+@charset utf-8;
+
+	/* clearfix */
+		.clearfix:after {
+    	visibility: hidden;
+    	display: block;
+    	font-size: 0;
+    	content: " ";
+    	clear: both;
+    	height: 0;
+		}
+	/* clearfix for ie7 */
+		.clearfix{
+    	display: inline-block;
+		}
+		.clearfix {
+    	display: block;
+		}
+
+div#wrapper{
+	width:1024px;
+	background:#edffe5;
+	background-image:url(../image/background.jpg);
+	margin:0 auto;
+	-webkit-box-shadow: 3px 3px 5px 0 #777;
+    -moz-box-shadow: 3px 3px 5px 0 #777;
+    box-shadow: 3px 3px 5px 0 #777;
+	line-height:24px;
+	}
+
+div#header{
+	width:960px;
+	background:#edffe5 url(../images/bg_header.jpg) repeat-x bottom;
+	margin:0 auto;
+	padding:0;
+	}
+
+div#contents{
+	width:960px;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0px;
+	padding-left: 0;
+	border-bottom-width: 10px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+	margin-bottom: 10px;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	}
+
+div#big_contents{
+width:960px;
+margin:0 auto;}
+
+div#footer{
+	clear:both;
+	width:960px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	font-family:"�q���M�m�p�S Pro W3","Hiragino Kaku Gothic Pro","���C���I","Meiryo","�l�r �o�S�V�b�N","Osaka�|����";
+	font-size:14px;
+	}
+
+div#footer a:hover {
+	border-bottom: 1px solid #999;
+}
+
+div#footer2{
+	width:960px;
+	padding-top:5px;
+	padding-bottom:10px;
+	padding-right:20px;
+	text-align: center;
+	font-size:12px;
+	font-weight:bold;
+	margin: 0 0 0 auto;
+	}
+
+div#contents:after{
+	height:0;
+    visibility:hidden;
+    content:".";
+    display:block;
+    clear:both;
+    margin:0 auto;
+    }
+
+div#main{
+	width:170px;
+	height:501px;
+	float:left;
+	background-image:url(../image/paper_3.png);
+	margin-top:5px;
+	border-style:groove;
+	padding:5px;
+	}
+
+div#main a:hover {
+	border-bottom: 1px solid #999;
+}
+
+div#main2{
+	width:780px;
+	float:right;
+	height: 510px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+div#map{
+	width:600px;
+	height:450px;
+	float:left;
+	margin-left:200px;
+	padding-top: 5px;
+	padding-right: 0;
+	padding-bottom: 30px;
+	padding-left: 0;
+	}
+
+div#sub{
+	width:375px;
+	float:left;
+	background:#fafafa;
+	height:250px;
+	border-style:ridge;
+	margin:0px auto 8px 8px;
+    }
+
+div#sub2{
+	width:375px;
+	float:right;
+	background:#fafafa;
+	height:250px;
+	border-style:ridge;
+	margin:0px 8px 8px 0px;
+	}
+
+div#sub3{
+	width:375px;
+	float:left;
+	background:#fafafa;
+	height:250px;
+	border-style:ridge;
+	margin:5px auto 0 8px;
+	}
+
+div#sub4{
+	width:375px;
+	float:right;
+	background:#fafafa;
+	height:250px;
+	border-style:ridge;
+	margin:5px 8px 0 0;
+	}
+
+div#sub5{
+	width:486px;
+	float:left;
+	background:#fafafa;
+	height:482px;
+	border-style:ridge;
+	margin-left:26px;
+	}
+
+div#sub6{
+	width:486px;
+	float:left;
+	background:#333333;
+	height:482px;
+	border-style:ridge;
+	margin:0px;
+	}
+
+
+div#gallerylogo{
+	margin-top:5px;
+	margin-bottom:30px;
+	width:973px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:4px;
+}
+
+div#gallerylogo img{
+	margin-top:3px;
+	border: 1px solid #003333;
+}

@@ -1,0 +1,161 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*---------------*/
+/***** Ming *****/
+/*---------------*/
+
+.effect-ming {
+	background: #030c17;
+    /*padding: 5px!important;*/
+}
+
+.effect-ming img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+.effect-ming .ming-cap::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 1px solid #fff;
+	box-shadow: 0 0 0 30px rgba(255,255,255,0.1);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(1.1,1.1,1);
+	transform: scale3d(1.1,1.1,1);
+}
+
+.effect-ming h4 {
+	/*margin: 20% 0 10px 0;*/
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.effect-ming p {
+	padding: 1em;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+/*.effect-ming:hover h4 {
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}*/
+
+.effect-ming:hover .ming-cap::before,
+.effect-ming:hover p {
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+.effect-ming:hover .ming-cap {
+	background-color: rgba(58,52,42,0);
+}
+
+.effect-ming:hover img {
+	opacity: 0.3;
+}
+
+
+/*---------------*/
+/***** Sadie *****/
+/*---------------*/
+
+.effect-sadie .sadie-cap::before {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 35%;
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 75%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 75%);
+    background-origin: paddng-box;
+	content: '';
+	opacity: 0;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.effect-sadie h4 {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	/*left: 25%;*/
+	width: 100%;
+	color: #fff;
+	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
+	transition: transform 0.35s, color 0.35s;
+	-webkit-transform: translate3d(0,-50%,0);
+	transform: translate3d(0,-50%,0);
+}
+
+.effect-sadie .sadie-cap::before,
+.effect-sadie p {
+    color: #fff;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+.effect-sadie p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	opacity: 0;
+	-webkit-transform: translate3d(0,50px,0);
+	transform: translate3d(0,50px,0);
+}
+
+.effect-sadie:hover h4 {
+	color: darkgray;
+	-webkit-transform: translate3d(0,-50%,0) translate3d(0,0,0);
+	transform: translate3d(0,-50%,0) translate3d(0,0,0);
+}
+
+.effect-sadie:hover .sadie-cap::before {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.effect-sadie:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+
+
+/*リンク部分*/
+.ming-cap a, .sadie-cap a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+	height: 100%;
+	padding: 5px;
+}
+
+
+

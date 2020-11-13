@@ -1,0 +1,67 @@
+.main {
+	font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka";
+	font-size: 10pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #333333;
+}
+.mainIDNT {
+	font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka";
+	font-size: 10pt;
+	font-style: normal;
+	line-height: normal;
+	text-indent: 10pt;
+	font-weight: normal;
+	font-variant: normal;
+	color: #333333;
+}
+.main2 {
+	font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka";
+	font-size: 10pt;
+	font-style: normal;
+	line-height: 1.5em;
+	font-weight: normal;
+	font-variant: normal;
+	color: #333333;
+}
+.main2IDNT {
+	font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka";
+	font-size: 10pt;
+	font-style: normal;
+	line-height: 1.5em;
+	text-indent: 10pt;
+	font-weight: normal;
+	font-variant: normal;
+	color: #333333;
+}
+.mainBLD {
+	font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka";
+	font-size: 10pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #333333;
+}
+.small {
+	font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka";
+	font-size: 9pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #333333;
+}
+A:link.niwamenu01 { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 10pt; color:#FFFFFF; text-decoration: none }
+A:visited.niwamenu01 { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 10pt; color:#FFFFFF; text-decoration: none }
+A:hover.niwamenu01 { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 10pt; color:#000000; text-decoration: none }
+
+A:link.niwamenu02 { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 10pt; color:#FFFFFF; text-decoration: none }
+A:visited.niwamenu02 { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 10pt; color:#FFFFFF; text-decoration: none }
+A:hover.niwamenu02 { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 10pt; color:#FFFFCC; text-decoration: none }
+
+A:link.niwamenu03 { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 10pt; color:#000000; text-decoration: none }
+A:visited.niwamenu03 { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 10pt; color:#000000; text-decoration: none }
+A:hover.niwamenu03 { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 10pt; color:#990000; text-decoration: none }

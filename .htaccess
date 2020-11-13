@@ -1,0 +1,33 @@
+ErrorDocument 401 /error.html
+ErrorDocument 403 /error.html
+ErrorDocument 404 /error.html
+ErrorDocument 500 /error.html
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^ueyoshi-kyotogarden\.com
+RewriteRule ^(.*) http://www.ueyoshi-kyotogarden.com/$1 [R=301,L]
+
+RewriteEngine on
+RewriteCond %{THE_REQUEST} ^.*/index.html
+RewriteRule ^(.*)index.html$ http://www.ueyoshi-kyotogarden.com/$1 [R=301,L]
+
+RewriteRule ^about/jigyou.html$ http://www.ueyoshi-kyotogarden.com/jisseki.html [R=301,L]
+RewriteRule ^about/gaiyou.html$ http://www.ueyoshi-kyotogarden.com/about.html [R=301,L]
+RewriteRule ^about/hyoushou.html$ http://www.ueyoshi-kyotogarden.com/commend.html [R=301,L]
+RewriteRule ^about/hyoushou.html$ http://www.ueyoshi-kyotogarden.com/commend.html [R=301,L]
+RewriteRule ^about/shigoto.html$ http://www.ueyoshi-kyotogarden.com/process.html [R=301,L]
+RewriteRule ^about/shoseki.html$ http://www.ueyoshi-kyotogarden.com/books.html [R=301,L]
+RewriteRule ^gallery/015.html$ http://www.ueyoshi-kyotogarden.com/gallery.html [R=301,L]
+RewriteRule ^gallery/008.html$ http://www.ueyoshi-kyotogarden.com/gallery.html [R=301,L]
+RewriteRule ^gallery/004.html$ http://www.ueyoshi-kyotogarden.com/gallery.html [R=301,L]
+RewriteRule ^gallery/005.html$ http://www.ueyoshi-kyotogarden.com/gallery.html [R=301,L]
+RewriteRule ^gallery/006.html$ http://www.ueyoshi-kyotogarden.com/gallery.html [R=301,L]
+RewriteRule ^gallery/001.html$ http://www.ueyoshi-kyotogarden.com/gallery.html [R=301,L]
+RewriteRule ^gallery/002.html$ http://www.ueyoshi-kyotogarden.com/gallery.html [R=301,L]
+RewriteRule ^gallery/003.html$ http://www.ueyoshi-kyotogarden.com/gallery.html [R=301,L]
+RewriteRule ^gallery/007.html$ http://www.ueyoshi-kyotogarden.com/gallery.html [R=301,L]
+RewriteRule ^gallery/013.html$ http://www.ueyoshi-kyotogarden.com/gallery.html [R=301,L]
+RewriteRule ^gallery/009.html$ http://www.ueyoshi-kyotogarden.com/gallery.html [R=301,L]
+RewriteRule ^gallery/010.html$ http://www.ueyoshi-kyotogarden.com/gallery.html [R=301,L]
+RewriteRule ^gallery/011.html$ http://www.ueyoshi-kyotogarden.com/gallery.html [R=301,L]
+RewriteRule ^gallery/012.html$ http://www.ueyoshi-kyotogarden.com/gallery.html [R=301,L]
+RewriteRule ^gallery/014.html$ http://www.ueyoshi-kyotogarden.com/gallery.html [R=301,L]
