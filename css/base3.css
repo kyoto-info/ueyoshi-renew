@@ -6,10 +6,12 @@
 }
 
 .itemColor{
-	font-size:13px;
+	font-size: 0.6rem;
+	line-height: 1.6em;
+	font-weight: 600;
 	color:#300;
 	overflow: hidden;
-	padding:6px 0px 0px 0px;
+	padding-top:1em;
 }
 
 
@@ -40,23 +42,31 @@
 }
 
 .newItem3 li{
-	float:left;
-	width:162px;
-	height:162px;
+	width:180px;
+	height:200px;
+	box-sizing: border-box;
 	border:2px solid #666;
 	border-radius:10px;
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
-	margin:0px 2px 6px 4px;
-	padding:10px 0px 10px 10px;
+	margin-bottom: 1em;
+	padding: 0.5em;
 	background:url(../image/back.jpg) left top;
 	list-style-type:none;
 }
 
 .main{
-	float:right;
-	width:964px;
-	margin:0px 0px 20px 0px;
+	box-sizing: border-box;
+	width:960px;
+	height: auto;
+	margin: 0 auto;
+	margin-bottom: 2em;
+	margin-top: 2em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-around;
 }
 
 #ichidan{
