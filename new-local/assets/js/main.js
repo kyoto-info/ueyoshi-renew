@@ -29,7 +29,7 @@ window.onload = function () {
  * ドロップダウンメニュー
  * -------------
  */
-$(function () {
+/*$(function () {
   const nav = ('.nav-child');
 
   $(nav)
@@ -41,22 +41,54 @@ $(function () {
     .mouseout(function (e) {
       $('ul', this).stop().slideUp('500ms');
     });
-});
+});*/
 
 /**
- * -------------
+ * ---------------------------------------
  * ドロップダウンメニュー Vanila js(旧サイト用)
- * -------------
+ * ---------------------------------------
  */
 
-const menu = document.querySelectorAll(".new-nav > li > a");
+//nav-inc.jsで読み込んだ要素に対して処理を行うため
+//window.onloadでDOMの構築が済んだ後に処理を開始させる
+window.onload = () => {
+
+  document.querySelectorAll('.nav-toggle').forEach((nav) => {
+    console.log(nav);
+    nav.addEventListener('mouseenter', (e) => {
+      console.log(e);
+      e.target.classList.add('active');
+    });
+    nav.addEventListener('mouseleave', (e) => {
+      e.target.classList.remove('active');
+    });
+  });
+
+}
+
+
+/* Sample-002 */
+/*window.onload = () => {
+
+  let dropDown = document.querySelector('.new-nav');
+  console.log(dropDown);
+  dropDown.addEventListener('mouseover', (e) => {
+    console.log(e);
+    if (dropDown.classList.contains('.closed')) {
+      dropDown.classList.remove('.closed')
+    }
+  })
+
+}*/
+
+/* Sample-001 */
+/*const menu = document.querySelectorAll(".new-nav > li");
 for (let i = 0; i < menu.length; i++) {
-  console.log(menu[i]);
-  menu[i].addEventListener("mouseover", function (e) {
+  menu[i].addEventListener('mouseover', function (e) {
     e.target.style.transition = "all ease-in .5s";
     this.nextElementSibling.classList.toggle("active");
-  })
-}
+  });
+}*/
 
 
 /**
@@ -88,7 +120,6 @@ const stTop = () => {
   //トップからのスクロール位置を取得して変数'c'に代入
   const c = document.documentElement.scrollTop || document.body.scrollTop;
   console.log(c);
-
   if (c > 0) {
     window.requestAnimationFrame(stTop);
     //scrollToはXとYの座標を取得
@@ -98,7 +129,6 @@ const stTop = () => {
 
 //Back to top イベントハンドラ
 bttBtn.onclick = function (e) {
-  console.log(e);
   e.preventDefault();
   stTop();
 }
